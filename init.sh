@@ -30,6 +30,9 @@
 # Set up devbox
 ##############################################
 
+# Install devbox if not installed already
+curl -fsSL https://get.jetify.com/devbox | bash
+
 # NOTE: change this as necessary
 devbox_dir="$HOME/Repo/personal/devbox"
 
@@ -78,5 +81,26 @@ for file in .*; do
   ln -s "$dotfiles_dir/$file" "$target"
 done
 
+##############################################
+# Set up scripts
+##############################################
+
+# NOTE: change this as necessary
+scripts_dir="$HOME/Repo/personal/scripts"
+
+if [[ ! -d "$scripts_dir" ]]; then
+  echo "Creating scripts dir at '$scripts_dir'"
+  mkdir -p "$scripts_dir"
+fi
+
+git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
+
+##############################################
+# Reminders after script completion
+##############################################
+
 echo "Reminders:"
+echo "- Devbox repo installed at '$devbox_dir'"
+echo "- Dotfiles repo installed at '$dotfiles_dir'"
+echo "- Scripts repo installed at '$scripts_dir'"
 echo "- Modify the values in '$HOME/.env' as necessary"
