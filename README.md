@@ -14,3 +14,11 @@ My current configuration consists of dotfiles, scripts, and a `Docker` workspace
 - Dotfiles: [https://github.com/eeternalsadness/dotfiles](https://github.com/eeternalsadness/dotfiles)
 - Scripts: [https://github.com/eeternalsadness/scripts](https://github.com/eeternalsadness/scripts)
 - Docker workspace: [https://github.com/eeternalsadness/docker-workspace](https://github.com/eeternalsadness/docker-workspace)
+
+## Installation
+
+To install the `devbox` setup with dotfiles and scripts, run the following command:
+
+```shell
+bash <(wget -qO- "https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh")
+```
