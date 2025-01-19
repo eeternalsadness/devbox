@@ -15,6 +15,14 @@ My current configuration consists of dotfiles, scripts, and a `Docker` workspace
 - Scripts: [https://github.com/eeternalsadness/scripts](https://github.com/eeternalsadness/scripts)
 - Docker workspace: [https://github.com/eeternalsadness/docker-workspace](https://github.com/eeternalsadness/docker-workspace)
 
+## Prerequisite
+
+Please make sure that the following packages are installed:
+- wget
+- curl
+- git
+- xz-utils
+
 ## Installation
 
 To install the `devbox` setup with dotfiles and scripts, run the following command:
