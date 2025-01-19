@@ -44,7 +44,7 @@ fi
 git clone "https://github.com/eeternalsadness/devbox.git" "$devbox_dir"
 
 echo "Creating symlink for 'devbox.json' at '$HOME/devbox.json'"
-ln -s "${devbox_dir}/devbox.json" "$HOME/devbox.json"
+ln -sf "${devbox_dir}/devbox.json" "$HOME/devbox.json"
 
 # NOTE: update the values in the .env file as necessary
 echo "Copying 'template.env' to '$HOME/.env'"
@@ -78,7 +78,7 @@ for file in .*; do
 
   # Create symlink
   echo "Creating symlink for '$file' at '$target'"
-  ln -s "$dotfiles_dir/$file" "$target"
+  ln -sf "$dotfiles_dir/$file" "$target"
 done
 
 ##############################################
