@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "git@latest",
+    "unzip@latest",
+    "curl@latest",
+    "wget@latest",
+    "docker@latest",
+    "awscli2@latest",
+    "jq@latest",
+    "yq@latest",
+    "tmux@3.5a",
+    "fzf@latest",
+    "lazygit@latest",
+    "ripgrep@latest",
+    "neovim@0.10.2",
+    "tfswitch@latest",
+    "kubectl@latest",
+    "go@latest",
+  ],
+  "env_from": "/home/bach/.env"
+}
