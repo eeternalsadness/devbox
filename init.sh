@@ -100,11 +100,20 @@ fi
 git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 
 ##############################################
+# Run devbox install to finish setup
+##############################################
+
+cd "$HOME"
+devbox install
+
+##############################################
 # Reminders after script completion
 ##############################################
 
+echo -e "\n============================================================\n"
 echo "Reminders:"
 echo "- Devbox repo installed at '$devbox_dir'"
 echo "- Dotfiles repo installed at '$dotfiles_dir'"
 echo "- Scripts repo installed at '$scripts_dir'"
 echo "- Modify the values in '$HOME/.env' as necessary"
+echo -e "\nRun 'devbox shell' to start your shell environment :D"
