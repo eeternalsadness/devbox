@@ -35,3 +35,7 @@ To install the `devbox` setup with dotfiles and scripts, run the following comma
 ```shell
 bash <(wget -qO- "https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh")
 ```
+
+### Usage
+
+After installation is complete, just run `devbox shell` to start your shell environment :D.
