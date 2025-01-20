@@ -17,5 +17,5 @@
     "kubectl@latest",
     "go@latest",
   ],
-  "env_from": "/home/bach/.env"
+  "env_from": ".env"
 }

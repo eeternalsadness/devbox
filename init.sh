@@ -47,8 +47,10 @@ echo "Creating symlink for 'devbox.json' at '$HOME/devbox.json'"
 ln -sf "${devbox_dir}/devbox.json" "$HOME/devbox.json"
 
 # NOTE: update the values in the .env file as necessary
-echo "Copying 'template.env' to '$HOME/.env'"
-cp "${devbox_dir}/template.env" "$HOME/.env"
+echo "Copying 'template.env' to '$devbox_dir/.env'"
+cp "${devbox_dir}/template.env" "$devbox_dir/.env"
+echo "Creating symlink for '.env' at '$HOME/.env'"
+ln -sf "${devbox_dir}/.env" "$HOME/.env"
 
 ##############################################
 # Set up dotfiles
