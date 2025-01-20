@@ -52,6 +52,8 @@ cp "${devbox_dir}/template.env" "$devbox_dir/.env"
 echo "Creating symlink for '.env' at '$HOME/.env'"
 ln -sf "${devbox_dir}/.env" "$HOME/.env"
 
+vi "$HOME/.env"
+
 ##############################################
 # Set up dotfiles
 ##############################################

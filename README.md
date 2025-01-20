@@ -26,6 +26,7 @@ Please make sure that the following packages are installed:
 - curl
 - git
 - xz-utils
+- vim
 
 ### Installation
 
