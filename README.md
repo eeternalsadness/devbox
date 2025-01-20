@@ -33,7 +33,7 @@ Please make sure that the following packages are installed:
 To install the `devbox` setup with dotfiles and scripts, run the following command:
 
 ```shell
-bash <(wget -qO- "https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh")
+source <(wget -qO- "https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh")
 ```
 
 ### Usage
