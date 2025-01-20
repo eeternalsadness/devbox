@@ -13,7 +13,7 @@
     "lazygit@latest",
     "ripgrep@latest",
     "luarocks@latest",
-    "neovim@0.10.2",
+    "neovim@latest",
     "tfswitch@latest",
     "kubectl@latest",
     "go@latest",
