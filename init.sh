@@ -78,7 +78,7 @@ git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 ##############################################
 
 cd "$HOME"
-devbox install -q
+devbox install
 
 ##############################################
 # Reminders after script completion
