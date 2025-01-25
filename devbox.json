@@ -17,6 +17,7 @@
     "neovim@latest",
     "tfswitch@latest",
     "kubectl@latest",
+    "k9s@latest",
     "go@latest",
     "cobra-cli@latest"
   ],
