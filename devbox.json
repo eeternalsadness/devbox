@@ -18,6 +18,7 @@
     "tfswitch@latest",
     "kubectl@latest",
     "go@latest",
+    "cobra-cli@latest"
   ],
   "env_from": ".env"
 }
