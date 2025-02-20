@@ -48,7 +48,7 @@ cd "$dotfiles_dir"
 
 for file in .*; do
   # Ignore special files
-  if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" ]]; then
+  if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" || "$file" == ".config" ]]; then
     continue
   fi
 
@@ -57,6 +57,20 @@ for file in .*; do
   # Create symlink
   echo "Creating symlink for '$file' at '$target'"
   ln -sf "$dotfiles_dir/$file" "$target"
+done
+
+# Symlink files in .config/
+for file in .config/*; do
+  # Ignore special files
+  if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" ]]; then
+    continue
+  fi
+
+  target="$HOME/.config/$file"
+
+  # Create symlink
+  echo "Creating symlink for '$file' at '$target'"
+  ln -sf "$dotfiles_dir/.config/$file" "$target"
 done
 
 ##############################################
