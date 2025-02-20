@@ -19,7 +19,9 @@
     "kubectl@latest",
     "k9s@latest",
     "go@latest",
-    "cobra-cli@latest"
+    "cobra-cli@latest",
+    "wikiman@latest",
+    "fd@latest"
   ],
   "env_from": ".env"
 }
