@@ -22,20 +22,18 @@ My current configuration consists of dotfiles, scripts, and a `Docker` workspace
 
 Please make sure that the following packages are installed:
 
-- wget
 - curl
 - git
 - xz-utils
-- vim
 
 ### Installation
 
 To install the `devbox` setup with dotfiles and scripts, run the following command:
 
 ```shell
-source <(wget -qO- "https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh")
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/eeternalsadness/devbox/refs/heads/main/init.sh)"
 ```
 
 ### Usage
 
-After installation is complete, just run `devbox shell` to start your shell environment :D.
+After installation is complete, just run `devbox shell` on the home directory to start your shell environment :D.
