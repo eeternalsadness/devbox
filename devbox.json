@@ -26,5 +26,10 @@
     "pass@latest",
     "gnupg@latest"
   ],
-  "env_from": ".env"
+  "env_from": ".env",
+  "shell": {
+    "scripts": {
+      "install_jira": "go install github.com/eeternalsadness/jira@latest"
+    }
+  }
 }

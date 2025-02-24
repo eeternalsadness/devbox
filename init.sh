@@ -99,6 +99,7 @@ git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 ##############################################
 
 devbox install -c $HOME
+devbox run install_jira -c $HOME
 
 ##############################################
 # Reminders after script completion
