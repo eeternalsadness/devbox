@@ -22,7 +22,9 @@
     "cobra-cli@latest",
     "wikiman@latest",
     "fd@latest",
-    "xclip@latest"
+    "xclip@latest",
+    "pass@latest",
+    "gnupg@latest"
   ],
   "env_from": ".env"
 }
