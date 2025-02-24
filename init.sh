@@ -44,33 +44,36 @@ git clone "https://github.com/eeternalsadness/dotfiles.git" "$dotfiles_dir"
 
 # Symlink dotfiles
 echo "Linking dotfiles..."
-cd "$dotfiles_dir"
 
-for file in .*; do
-  # Ignore special files
-  if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" || "$file" == ".config" ]]; then
+for file in $dotfiles_dir/.*; do
+  file_name=$(basename "$file")
+
+  # Ignore folders & special files
+  if [[ -d "$file" ]] || [[ "$file_name" == ".gitignore" ]]; then
     continue
   fi
 
-  target="$HOME/$file"
+  target="$HOME/$file_name"
 
   # Create symlink
   echo "Creating symlink for '$file' at '$target'"
-  ln -sf "$dotfiles_dir/$file" "$target"
+  ln -sf "$file" "$target"
 done
 
 # Symlink dirs in .config/
-for file in .config/*; do
+for file in $dotfiles_dir/.config/*; do
+  file_name=$(basename "$file")
+
   # Ignore special files
-  if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" ]]; then
+  if [[ "$file_name" == ".git" || "$file_name" == ".gitignore" ]]; then
     continue
   fi
 
-  target="$HOME/$file"
+  target="$HOME/.config/$file_name"
 
   # Create symlink
   echo "Creating symlink for '$file' at '$target'"
-  ln -sf "$dotfiles_dir/$file" "$target"
+  ln -sf "$file" "$target"
 done
 
 ##############################################
@@ -103,4 +106,4 @@ echo "- Devbox repo installed at '$devbox_dir'"
 echo "- Dotfiles repo installed at '$dotfiles_dir'"
 echo "- Scripts repo installed at '$scripts_dir'"
 echo "- Modify the values in '$HOME/.env' as necessary"
-echo -e "\nRun 'devbox shell' to start your shell environment :D"
+echo -e "\nRun 'devbox shell' in $HOME to start your shell environment :D"
