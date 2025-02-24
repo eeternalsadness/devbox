@@ -61,6 +61,10 @@ for file in $dotfiles_dir/.*; do
 done
 
 # Symlink dirs in .config/
+if [[ ! -d "$HOME/.config" ]]; then
+  mkdir "$HOME/.config"
+fi
+
 for file in $dotfiles_dir/.config/*; do
   file_name=$(basename "$file")
 
