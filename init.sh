@@ -26,7 +26,7 @@ cp "${devbox_dir}/template.env" "$devbox_dir/.env"
 echo "Creating symlink for '.env' at '$HOME/.env'"
 ln -sf "${devbox_dir}/.env" "$HOME/.env"
 
-vim "$HOME/.env"
+#vim "$HOME/.env"
 
 ##############################################
 # Set up dotfiles
@@ -59,18 +59,18 @@ for file in .*; do
   ln -sf "$dotfiles_dir/$file" "$target"
 done
 
-# Symlink files in .config/
+# Symlink dirs in .config/
 for file in .config/*; do
   # Ignore special files
   if [[ "$file" == "." || "$file" == ".." || "$file" == ".git" || "$file" == ".gitignore" ]]; then
     continue
   fi
 
-  target="$HOME/.config/$file"
+  target="$HOME/$file"
 
   # Create symlink
   echo "Creating symlink for '$file' at '$target'"
-  ln -sf "$dotfiles_dir/.config/$file" "$target"
+  ln -sf "$dotfiles_dir/$file" "$target"
 done
 
 ##############################################
