@@ -1,31 +1,96 @@
 {
-  "packages": [
-    "git@latest",
-    "unzip@latest",
-    "curl@latest",
-    "wget@latest",
-    "docker@latest",
-    "awscli2@latest",
-    "jq@latest",
-    "yq@latest",
-    "tmux@3.5a",
-    "fzf@latest",
-    "lazygit@latest",
-    "ripgrep@latest",
-    "luarocks@latest",
-    "nodejs@latest",
-    "neovim@latest",
-    "tfswitch@latest",
-    "kubectl@latest",
-    "k9s@latest",
-    "go@latest",
-    "cobra-cli@latest",
-    "wikiman@latest",
-    "fd@latest",
-    "xclip@latest",
-    "pass@latest",
-    "gnupg@latest"
-  ],
+  "packages": {
+    "git": {
+      "version": "latest"
+    },
+    "unzip": {
+      "version": "latest"
+    },
+    "curl": {
+      "version": "latest"
+    },
+    "wget": {
+      "version": "latest"
+    },
+    "docker": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
+    },
+    "awscli2": {
+      "version": "latest"
+    },
+    "jq": {
+      "version": "latest"
+    },
+    "yq": {
+      "version": "latest"
+    },
+    "tmux": {
+      "version": "3.5a"
+    },
+    "fzf": {
+      "version": "latest"
+    },
+    "lazygit": {
+      "version": "latest"
+    },
+    "ripgrep": {
+      "version": "latest"
+    },
+    "luarocks": {
+      "version": "latest"
+    },
+    "nodejs": {
+      "version": "latest"
+    },
+    "neovim": {
+      "version": "latest"
+    },
+    "tfswitch": {
+      "version": "latest",
+      "platforms": [
+        "aarch64-darwin"
+      ]
+    },
+    "kubectl": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
+    },
+    "k9s": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
+    },
+    "go": {
+      "version": "latest"
+    },
+    "cobra-cli": {
+      "version": "latest"
+    },
+    "wikiman": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
+    },
+    "fd": {
+      "version": "latest"
+    },
+    "xclip": {
+      "version": "latest"
+    },
+    "pass": {
+      "version": "latest"
+    },
+    "gnupg": {
+      "version": "latest"
+    }
+  },
   "env_from": ".env",
   "shell": {
     "scripts": {
