@@ -21,7 +21,8 @@
     "go@latest",
     "cobra-cli@latest",
     "wikiman@latest",
-    "fd@latest"
+    "fd@latest",
+    "xclip@latest"
   ],
   "env_from": ".env"
 }
