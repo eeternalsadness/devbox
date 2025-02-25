@@ -89,6 +89,12 @@
     },
     "gnupg": {
       "version": "latest"
+    },
+    "libdrm": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
     }
   },
   "env_from": ".env",
