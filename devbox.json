@@ -95,6 +95,12 @@
       "platforms": [
         "x86_64-linux"
       ]
+    },
+    "wl-clipboard": {
+      "version": "latest",
+      "platforms": [
+        "x86_64-linux"
+      ]
     }
   },
   "env_from": ".env",
