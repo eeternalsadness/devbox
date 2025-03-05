@@ -1,53 +1,25 @@
 {
   "packages": {
-    "git": {
-      "version": "latest"
-    },
-    "unzip": {
-      "version": "latest"
-    },
-    "curl": {
-      "version": "latest"
-    },
-    "wget": {
-      "version": "latest"
-    },
+    "git": "latest",
+    "unzip": "latest",
+    "curl": "latest",
+    "wget": "latest",
     "docker": {
       "version": "latest",
       "platforms": [
         "x86_64-linux"
       ]
     },
-    "awscli2": {
-      "version": "latest"
-    },
-    "jq": {
-      "version": "latest"
-    },
-    "yq": {
-      "version": "latest"
-    },
-    "tmux": {
-      "version": "3.5a"
-    },
-    "fzf": {
-      "version": "latest"
-    },
-    "lazygit": {
-      "version": "latest"
-    },
-    "ripgrep": {
-      "version": "latest"
-    },
-    "luarocks": {
-      "version": "latest"
-    },
-    "nodejs": {
-      "version": "latest"
-    },
-    "neovim": {
-      "version": "latest"
-    },
+    "awscli2": "latest",
+    "jq": "latest",
+    "yq": "latest",
+    "tmux": "3.5a",
+    "fzf": "latest",
+    "lazygit": "latest",
+    "ripgrep": "latest",
+    "luarocks": "latest",
+    "nodejs": "latest",
+    "neovim": "latest",
     "tfswitch": {
       "version": "latest",
       "platforms": [
@@ -66,30 +38,18 @@
         "x86_64-linux"
       ]
     },
-    "go": {
-      "version": "latest"
-    },
-    "cobra-cli": {
-      "version": "latest"
-    },
+    "go": "latest",
+    "cobra-cli": "latest",
     "wikiman": {
       "version": "latest",
       "platforms": [
         "x86_64-linux"
       ]
     },
-    "fd": {
-      "version": "latest"
-    },
-    "xclip": {
-      "version": "latest"
-    },
-    "pass": {
-      "version": "latest"
-    },
-    "gnupg": {
-      "version": "latest"
-    },
+    "fd": "latest",
+    "xclip": "latest",
+    "pass": "latest",
+    "gnupg": "latest",
     "libdrm": {
       "version": "latest",
       "platforms": [
