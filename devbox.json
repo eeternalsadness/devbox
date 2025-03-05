@@ -101,7 +101,8 @@
       "platforms": [
         "x86_64-linux"
       ]
-    }
+    },
+    "python": "latest"
   },
   "env_from": ".env",
   "shell": {
