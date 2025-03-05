@@ -56,12 +56,6 @@
         "x86_64-linux"
       ]
     },
-    "wl-clipboard": {
-      "version": "latest",
-      "platforms": [
-        "x86_64-linux"
-      ]
-    },
     "python": "latest"
   },
   "env_from": ".env",
