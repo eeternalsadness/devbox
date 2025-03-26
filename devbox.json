@@ -26,18 +26,8 @@
         "aarch64-darwin"
       ]
     },
-    "kubectl": {
-      "version": "latest",
-      "platforms": [
-        "x86_64-linux"
-      ]
-    },
-    "k9s": {
-      "version": "latest",
-      "platforms": [
-        "x86_64-linux"
-      ]
-    },
+    "kubectl": "latest",
+    "k9s": "latest",
     "go": "latest",
     "cobra-cli": "latest",
     "wikiman": {
