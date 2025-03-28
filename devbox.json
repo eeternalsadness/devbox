@@ -4,12 +4,6 @@
     "unzip": "latest",
     "curl": "latest",
     "wget": "latest",
-    "docker": {
-      "version": "latest",
-      "platforms": [
-        "x86_64-linux"
-      ]
-    },
     "awscli2": "latest",
     "jq": "latest",
     "yq": "latest",
