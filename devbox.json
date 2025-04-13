@@ -14,12 +14,7 @@
     "luarocks": "latest",
     "nodejs": "latest",
     "neovim": "latest",
-    "tfswitch": {
-      "version": "latest",
-      "platforms": [
-        "aarch64-darwin"
-      ]
-    },
+    "tfswitch": "latest",
     "kubectl": "latest",
     "k9s": "latest",
     "argocd": "latest",
