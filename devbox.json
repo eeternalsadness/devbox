@@ -36,7 +36,8 @@
     "xclip": "latest",
     "pass": "latest",
     "gnupg": "latest",
-    "python": "latest"
+    "python": "latest",
+    "minikube": "latest"
   },
   "env_from": ".env",
   "shell": {
