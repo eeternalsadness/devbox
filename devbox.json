@@ -32,7 +32,8 @@
     "pass": "latest",
     "gnupg": "latest",
     "python": "latest",
-    "minikube": "latest"
+    "minikube": "latest",
+    "tree": "latest"
   },
   "env_from": ".env",
   "shell": {
