@@ -36,7 +36,8 @@
     "tree": "latest",
     "uv": "latest",
     "ansible": "latest",
-    "vault": "latest"
+    "vault": "latest",
+    "kubectx": "latest"
   },
   "env_from": ".env",
   "shell": {
