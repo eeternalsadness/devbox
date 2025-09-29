@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # NOTE: change these as necessary
 devbox_dir="$HOME/Repo/personal/devbox"
 dotfiles_dir="$HOME/Repo/personal/dotfiles"
@@ -19,16 +21,11 @@ fi
 
 git clone "https://github.com/eeternalsadness/devbox.git" "$devbox_dir"
 
-echo "Creating symlink for 'devbox.json' at '$HOME/devbox.json'"
-ln -sf "${devbox_dir}/devbox.json" "$HOME/devbox.json"
-
-# NOTE: update the values in the .env file as necessary
-echo "Copying 'template.env' to '$devbox_dir/.env'"
-cp "${devbox_dir}/template.env" "$devbox_dir/.env"
-echo "Creating symlink for '.env' at '$HOME/.env'"
-ln -sf "${devbox_dir}/.env" "$HOME/.env"
-
-#vim "$HOME/.env"
+# Init devbox projects
+for dir in */; do
+  echo "Copying '${devbox_dir}/${dir}/template.env' to '$devbox_dir/$dir/.env'"
+  cp "${devbox_dir}/${dir}/template.env" "${devbox_dir}/${dir}/.env"
+done
 
 ##############################################
 # Set up dotfiles
@@ -95,7 +92,7 @@ git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 ##############################################
 
 devbox install -c $HOME
-devbox run -c $HOME install_jira
+#devbox run -c $HOME install_jira
 
 ##############################################
 # Reminders after script completion
