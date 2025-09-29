@@ -1,2 +1,2 @@
-FROM ubuntu:latest
-RUN apt update && apt install -y git curl xz-utils
+FROM ubuntu:24.04
+RUN apt-get update && apt-get install -y git curl xz-utils
