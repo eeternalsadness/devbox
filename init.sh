@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
+# NOTE: change these as necessary
+devbox_dir="$HOME/Repo/personal/devbox"
+dotfiles_dir="$HOME/Repo/personal/dotfiles"
+scripts_dir="$HOME/Repo/personal/scripts"
+
 ##############################################
 # Set up devbox
 ##############################################
 
 # Install devbox if not installed already
 curl -fsSL https://get.jetify.com/devbox | bash
-
-# NOTE: change this as necessary
-devbox_dir="$HOME/Repo/personal/devbox"
 
 if [[ ! -d "$devbox_dir" ]]; then
   echo "Creating devbox dir at '$devbox_dir'"
@@ -31,9 +33,6 @@ ln -sf "${devbox_dir}/.env" "$HOME/.env"
 ##############################################
 # Set up dotfiles
 ##############################################
-
-# NOTE: change this as necessary
-dotfiles_dir="$HOME/Repo/personal/dotfiles"
 
 if [[ ! -d "$dotfiles_dir" ]]; then
   echo "Creating dotfiles dir at '$dotfiles_dir'"
@@ -83,9 +82,6 @@ done
 ##############################################
 # Set up scripts
 ##############################################
-
-# NOTE: change this as necessary
-scripts_dir="$HOME/Repo/personal/scripts"
 
 if [[ ! -d "$scripts_dir" ]]; then
   echo "Creating scripts dir at '$scripts_dir'"
