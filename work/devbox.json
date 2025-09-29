@@ -1,0 +1,23 @@
+{
+  "packages": {
+    "fzf": "latest",
+    "lazygit": "latest",
+    "ripgrep": "latest",
+    "luarocks": "latest",
+    "neovim": "latest",
+    "tfswitch": "latest",
+    "k9s": "latest",
+    "go": "latest",
+    "cobra-cli": "latest",
+    "fd": "latest",
+    "xclip": "latest",
+    "pass": "latest",
+    "gnupg": "latest",
+    "tree": "latest",
+    "telnet": "latest",
+    "python": "latest",
+    "uv": "latest",
+    "repomix": "latest"
+  },
+  "env_from": ".env"
+}
