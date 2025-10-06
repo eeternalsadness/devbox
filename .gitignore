@@ -1,3 +1,4 @@
 .env
 devbox.lock
-.devbox
+.devbox/
+devbox.d/
