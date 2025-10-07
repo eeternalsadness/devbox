@@ -15,7 +15,6 @@
     "gnupg":     "latest",
     "tree":      "latest",
     "telnet":    "latest",
-    "python":    "latest",
     "uv":        "latest",
     "repomix":   "latest",
     "mysql":     "latest"
