@@ -39,10 +39,5 @@
     "vault": "latest",
     "kubectx": "latest"
   },
-  "env_from": ".env",
-  "shell": {
-    "scripts": {
-      "install_jira": "go install github.com/eeternalsadness/jira@latest"
-    }
-  }
+  "env_from": ".env"
 }
