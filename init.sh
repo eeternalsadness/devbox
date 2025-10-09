@@ -91,7 +91,7 @@ git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 # Run devbox install to finish setup
 ##############################################
 
-devbox install -c $HOME
+#devbox install -c "$HOME"
 #devbox run -c $HOME install_jira
 
 ##############################################
@@ -103,5 +103,5 @@ echo "Reminders:"
 echo "- Devbox repo installed at '$devbox_dir'"
 echo "- Dotfiles repo installed at '$dotfiles_dir'"
 echo "- Scripts repo installed at '$scripts_dir'"
-echo "- Modify the values in '$HOME/.env' as necessary"
-echo -e "\nRun 'devbox shell' in $HOME to start your shell environment :D"
+echo "- Modify the environment variables in '$devbox_dir/{env}/.env' as necessary"
+echo -e "\nRun 'dbs' to start your shell environment :D"
