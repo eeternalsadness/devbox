@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash bash
 
 set -euo pipefail
 
@@ -22,9 +22,9 @@ fi
 git clone "https://github.com/eeternalsadness/devbox.git" "$devbox_dir"
 
 # Init devbox projects
-for dir in */; do
-  echo "Copying '${devbox_dir}/${dir}/template.env' to '$devbox_dir/$dir/.env'"
-  cp "${devbox_dir}/${dir}/template.env" "${devbox_dir}/${dir}/.env"
+for dir in $devbox_dir/*/; do
+  echo "Copying '${dir}/template.env' to '$dir/.env'"
+  cp "${dir}/template.env" "${dir}/.env"
 done
 
 ##############################################
@@ -91,7 +91,11 @@ git clone "https://github.com/eeternalsadness/scripts.git" "$scripts_dir"
 # Run devbox install to finish setup
 ##############################################
 
-#devbox install -c "$HOME"
+source "$scripts_dir/devbox/common.sh"
+devbox_env=$(get_devbox_env "$devbox_dir")
+if [[ -n "$devbox_env" ]]; then
+  devbox install -c "${devbox_dir}/${devbox_env}"
+fi
 #devbox run -c $HOME install_jira
 
 ##############################################
