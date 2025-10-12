@@ -1,8 +1,6 @@
 {
   "packages": {
-    "git": "latest",
     "unzip": "latest",
-    "curl": "latest",
     "wget": "latest",
     "awscli2": "latest",
     "jq": "latest",
