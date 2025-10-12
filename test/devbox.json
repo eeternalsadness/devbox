@@ -1,0 +1,4 @@
+{
+  "packages": {},
+  "env_from": ".env"
+}
