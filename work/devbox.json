@@ -1,23 +1,28 @@
 {
   "packages": {
-    "fzf":       "latest",
-    "lazygit":   "latest",
-    "ripgrep":   "latest",
-    "luarocks":  "latest",
-    "neovim":    "latest",
-    "tfswitch":  "latest",
-    "k9s":       "latest",
-    "go":        "latest",
+    "fzf": "latest",
+    "lazygit": "latest",
+    "ripgrep": "latest",
+    "luarocks": "latest",
+    "neovim": "latest",
+    "tfswitch": "latest",
+    "k9s": "latest",
+    "go": "latest",
     "cobra-cli": "latest",
-    "fd":        "latest",
-    "xclip":     "latest",
-    "pass":      "latest",
-    "gnupg":     "latest",
-    "tree":      "latest",
-    "telnet":    "latest",
-    "uv":        "latest",
-    "repomix":   "latest",
-    "mysql":     "latest"
+    "fd": "latest",
+    "xclip": "latest",
+    "pass": "latest",
+    "gnupg": "latest",
+    "tree": "latest",
+    "telnet": "latest",
+    "uv": "latest",
+    "repomix": "latest",
+    "mysql": "latest"
   },
-  "env_from": ".env"
+  "env_from": ".env",
+  "shell": {
+    "scripts": {
+      "install_jira": "go install github.com/eeternalsadness/jira@latest"
+    }
+  }
 }
