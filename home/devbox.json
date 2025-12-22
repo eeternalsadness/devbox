@@ -37,7 +37,8 @@
     "vault":    "latest",
     "kubectx":  "latest",
     "telnet":   "latest",
-    "nmap":     "latest"
+    "nmap":     "latest",
+    "talosctl": "latest"
   },
   "env_from": ".env"
 }
