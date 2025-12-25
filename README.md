@@ -31,7 +31,7 @@ Please make sure that the following packages are installed:
 To install the `devbox` setup with dotfiles and scripts, run the following command:
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/eeternalsadness/scripts/refs/heads/master/devbox/init.sh)"
+/bin/bash <(curl -fsSL https://raw.githubusercontent.com/eeternalsadness/scripts/refs/heads/master/devbox/init.sh)
 ```
 
 ### Usage
