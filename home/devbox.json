@@ -39,7 +39,8 @@
     "nmap":       "latest",
     "talosctl":   "latest",
     "neovim":     "0.11.5",
-    "postgresql": "latest"
+    "postgresql": "latest",
+    "bun":        "latest"
   },
   "env_from": ".env",
   "shell": {
