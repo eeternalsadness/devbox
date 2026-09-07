@@ -18,7 +18,8 @@
     "uv":        "latest",
     "repomix":   "latest",
     "mysql":     "latest",
-    "bun":       "latest"
+    "bun":       "latest",
+    "snyk":      "latest"
   },
   "env_from": ".env",
   "shell": {
