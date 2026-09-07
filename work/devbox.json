@@ -19,7 +19,9 @@
     "repomix":   "latest",
     "mysql":     "latest",
     "bun":       "latest",
-    "snyk":      "latest"
+    "snyk":      "latest",
+    "trivy":     "latest",
+    "gitleaks":  "latest"
   },
   "env_from": ".env",
   "shell": {
