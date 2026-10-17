@@ -40,7 +40,8 @@
     "talosctl":   "latest",
     "neovim":     "0.11.5",
     "postgresql": "latest",
-    "bun":        "latest"
+    "bun":        "latest",
+    "pipx":       "latest"
   },
   "env_from": ".env",
   "shell": {
