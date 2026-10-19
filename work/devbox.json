@@ -21,7 +21,9 @@
     "bun":       "latest",
     "snyk":      "latest",
     "trivy":     "latest",
-    "gitleaks":  "latest"
+    "gitleaks":  "latest",
+    "biome":     "latest",
+    "ruff":      "latest"
   },
   "env_from": ".env",
   "shell": {
